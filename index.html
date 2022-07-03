@@ -21,6 +21,9 @@
             gap: 8px;
             margin: 16px 0;
         }
+        .verticalSlider{
+            writing-mode: bt-lr;
+        }
     </style>
     <script>
         checkTyping = ["א","ב","ג","ד","ה","ו","ז","ח","ט","י","כ","ל","מ","נ","ס","ע","פ","צ","ק","ר","ש","ת","ך","ן","ם","ץ","ף",".",","]
@@ -33,7 +36,7 @@
         <button>פונט 2</button>
     </div>
     <div class="flexDiv">
-        <input type="range" min="1" max="10" value="5" />
+        <input type="range" min="1" max="10" value="5" class="verticalSlider" />
         <textarea class="fontText" maxlength="100" placeholder="הקלד כאן..."></textarea>
     </div>
 </body>
