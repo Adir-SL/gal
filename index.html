@@ -65,7 +65,7 @@
     <script>
         function sliderMove(){
             console.log(document.getElementById('fontSlider').value);
-            
+            document.getElementById("fontInput").style.fontWeight = document.getElementById('fontSlider').value;
         }
         checkTyping = ["א","ב","ג","ד","ה","ו","ז","ח","ט","י","כ","ל","מ","נ","ס","ע","פ","צ","ק","ר","ש","ת","ך","ן","ם","ץ","ף",".",","]
         // only allow characters from this array;
@@ -80,10 +80,10 @@
         <div class="flexDiv">
             <div class="flexDiv verticalFlex">
                 <div>פתוח</div>
-                <input type="range" min="1" max="10" value="5" class="verticalSlider" id="fontSlider" onchange="sliderMove();" />
+                <input type="range" min="1" max="100" value="50" class="verticalSlider" id="fontSlider" onchange="sliderMove();" />
                 <div>סגור</div>
             </div>
-            <textarea class="fontText" maxlength="100" placeholder="אז למה שלא תכתב.י משהו?"></textarea>
+            <textarea class="fontText" id="fontInput" maxlength="100" placeholder="אז למה שלא תכתב.י משהו?"></textarea>
         </div>
     </div>
 </body>
