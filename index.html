@@ -76,7 +76,7 @@
     <script>
         checkTyping = ["א","ב","ג","ד","ה","ו","ז","ח","ט","י","כ","ל","מ","נ","ס","ע","פ","צ","ק","ר","ש","ת","ך","ן","ם","ץ","ף",".",","," "]
         function sliderMove(){
-            document.getElementById("fontInput").style.fontWeight = document.getElementById('fontSlider').value;
+            document.getElementById("fontInput").style.fontWeight = 100 - document.getElementById('fontSlider').value;
         }
         function checkInput(){
             var x = checkTyping;
