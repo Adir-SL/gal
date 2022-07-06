@@ -73,10 +73,12 @@
         button:hover{
             background-color: #f7f7f7;
         }
+        button:nth-last-of-type(1){
+            font-family: 'Almoni';
+        }
         .reverseColors{
             background-color: black;
             color: white;
-            font-family: 'Almoni';
         }
         .reverseColors:hover{
             background-color: #474747;
@@ -104,13 +106,13 @@
         }
         function frankFunc(){
             document.getElementById("fontInput").classList.add("frankText");
-            document.getElementById("frankBTN").classList.add("reverseColors");
-            document.getElementById("almoniBTN").classList.remove("reverseColors");
+            document.getElementById("frankBTN").classList.remove("reverseColors");
+            document.getElementById("almoniBTN").classList.add("reverseColors");
         }
         function almoniFunc(){
             document.getElementById("fontInput").classList.remove("frankText");
-            document.getElementById("frankBTN").classList.remove("reverseColors");
-            document.getElementById("almoniBTN").classList.add("reverseColors");
+            document.getElementById("frankBTN").classList.add("reverseColors");
+            document.getElementById("almoniBTN").classList.remove("reverseColors");
         }
     </script>
 </head>
