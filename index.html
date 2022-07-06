@@ -104,6 +104,8 @@
         }
         function frankFunc(){
             document.getElementById("fontInput").classList.add("frankText");
+            document.getElementById("frankBTN").classList.add("reverseColors");
+            document.getElementById("almoniBTN").classList.remove("reverseColors");
         }
         function almoniFunc(){
             document.getElementById("fontInput").classList.remove("frankText");
@@ -113,8 +115,8 @@
 <body dir="rtl">
     <div class="flexDiv verticalFlex">
         <div class="flexDiv">
-            <button onclick="frankFunc();">פרנקריהל</button>
-            <button class="reverseColors" onclick="almoniFunc();">אלמוני</button>
+            <button id="almoniBTN" onclick="frankFunc();">פרנקריהל</button>
+            <button id="frankBTN" class="reverseColors" onclick="almoniFunc();">אלמוני</button>
         </div>
         <div class="flexDiv">
             <div class="flexDiv verticalFlex">
