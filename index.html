@@ -84,6 +84,7 @@
             background-color: #474747;
         }
         #info{
+            position: relative;
             width: 36px;
             height: 36px;
             border: 3px solid black;
@@ -95,6 +96,12 @@
             font-weight: bold;
             font-size: 1.5em;
             margin-right: 410px;
+        }
+        #info:hover::after{
+            content: attr(tooltip);
+            position: absolute;
+            top: 40px;
+            width: 340px;
         }
 
     </style>
@@ -134,7 +141,13 @@
         <div class="flexDiv">
             <button id="almoniBTN" onclick="frankFunc();">פרנקריהל</button>
             <button id="frankBTN" class="reverseColors" onclick="almoniFunc();">אלמוני</button>
-            <div id="info">i</div>
+            <div id="info" tooltip="גמיש - משקל העוסק בתורת הגשטלט
+            .ומחפש את הקריאות באות העברית
+            יש לרשותך שני פונטים שונים (פרנקרהיל ואלמוני)
+             עם המשקל גמיש עליהן, מזמינה אותך לבדוק בעצמך
+            .מתי האות קריאה בעינך
+            
+            ">i</div>
         </div>
         <div class="flexDiv">
             <div class="flexDiv verticalFlex">
